@@ -1,0 +1,39 @@
+.TodoListItem {
+  position: relative;
+  height: 50px;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 25px;
+  margin: 15px 0;
+  width: 100%;
+}
+
+.ItemName {
+  font-family: 'Segoe UI';
+  font-size: calc(6px + 0.7vw);
+  text-align: left;
+  padding-right: 25px;
+  padding-left: 36px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 50px;
+}
+
+.ItemStateIndicator {
+  position: absolute;
+  height: 100%;
+  width: 30px;
+  border-bottom-left-radius: 120px;
+  border-top-left-radius: 120px;
+}
+
+.ItemStateIndicator[status="Pending"] { background-color: gray;}
+.ItemStateIndicator[status="InProgress"] {background-color: skyblue;}
+.ItemStateIndicator[status="Done"] { background-color: rgb(61, 150, 73);}
+
+.Selected {
+  background-color: rgb(194, 191, 191);
+  color:white
+}

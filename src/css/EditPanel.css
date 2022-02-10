@@ -1,0 +1,73 @@
+.EditPanel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 15px;
+}
+
+#EditNoteName {
+    font-size: calc(6px + 0.5vw);
+    border-radius: 8px;
+    padding: 10px;
+    height: 25px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px inset;
+}
+
+#EditNoteDescription {
+    font-size: calc(6px + 0.55vw);
+    padding: 10px;
+    border-radius: 16px;
+    min-height: calc(100% - 45px - 50px - 30px - 20px);
+    max-height: calc(100% - 45px - 50px - 30px - 20px);
+
+    resize: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px inset;
+}
+
+.BottomContainer {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#EditNoteStatus {
+    font-size: calc(6px + 0.7vw);
+    padding: 0 15px;
+    border-radius: 32px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
+}
+
+.DeleteNote {
+    font-size: calc(6px + 0.7vw);
+    margin: 0 30px;
+    padding: 0 15px;
+    border-radius: 32px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    transition: 0.25s;
+}
+
+.EditConfirm {
+    font-size: calc(6px + 0.7vw);
+    margin: 0 30px;
+    padding: 0 15px;
+    border-radius: 32px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    transition: 0.25s;
+}
+
+.DeleteNote:hover {
+    background-color: #aa3d3d;
+    color: white;
+}
+
+.EditConfirm:hover {
+    background-color: #46a149;
+    color: white;
+}

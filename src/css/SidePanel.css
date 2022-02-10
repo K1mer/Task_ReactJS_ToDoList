@@ -1,0 +1,43 @@
+.SidePanel {
+    min-width: 28%;
+    max-width: 28%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 15px;
+  }
+  
+.SearchBar {
+    border-radius: 8px;
+    padding: 10px;
+    height: 25px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px inset;
+}
+
+#TodoList {
+    padding: 10px;
+    border-radius: 16px;
+    min-height: calc(100% - 45px - 50px - 30px - 20px);
+    max-height: calc(100% - 45px - 50px - 30px - 20px);
+    background-color: #ffffff;
+    overflow-y: auto;
+    box-shadow: rgba(0, 0, 0, 0.3) -10px -10px 30px -20px inset,
+    rgba(0, 0, 0, 0.3) 10px 10px 30px -20px inset;
+}
+
+.AddItemButton {
+    font-size: calc(6px + 0.7vw);
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 50px;
+    border-radius: 32px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    transition: 0.4s;
+}
+
+.AddItemButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
